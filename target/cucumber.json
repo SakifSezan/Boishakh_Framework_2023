@@ -1,0 +1,236 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify user can see Home page",
+        "description": "",
+        "id": "home-page;verify-user-can-see-home-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4379480700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Launch \u003c\"URL\"\u003e NET",
+            "match": {
+              "arguments": [
+                {
+                  "val": "URL",
+                  "offset": 9
+                }
+              ],
+              "location": "HomeLink.launch_NET(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5936633600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Click on Home link",
+            "match": {
+              "location": "HomeLink.click_on_Home_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify user can see Home page",
+            "match": {
+              "location": "HomeLink.verify_user_can_see_Home_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Home page",
+    "description": "",
+    "id": "home-page",
+    "keyword": "Feature",
+    "uri": "HomePage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User can login",
+        "description": "",
+        "id": "login-feature;user-can-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3113464500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch \u003c\"URL\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "URL",
+                  "offset": 9
+                }
+              ],
+              "location": "Login.launch(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20073715000,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login2\"}\n  (Session info: chrome\u003d118.0.5993.88)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.11.0\u0027, revision: \u0027040bc5406b\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.19\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [fbfd404a7a7885326bb9cc0f4cf2b088, findElement {using\u003did, value\u003dlogin2}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\\Users\\SAKIF\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62243}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62243/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: fbfd404a7a7885326bb9cc0f4cf2b088\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy27.click(Unknown Source)\r\n\tat PageAction.HomePageAction.Clicklogin(HomePageAction.java:15)\r\n\tat StepDefinition.Login.click_login(Login.java:23)\r\n\tat ✽.Then Click login(Loginn.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Click login",
+            "match": {
+              "location": "Login.click_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User can login",
+            "match": {
+              "location": "Login.user_can_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Verify user in landed in the cart page",
+        "description": "",
+        "id": "login-feature;verify-user-in-landed-in-the-cart-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2757383100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Launch \u003c\"URL\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "URL",
+                  "offset": 9
+                }
+              ],
+              "location": "Login.launch(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12807427100,
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: cartur\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.11.0\u0027, revision: \u0027040bc5406b\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.19\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy27.click(Unknown Source)\r\n\tat PageAction.HomePageAction.ClickCartlink(HomePageAction.java:26)\r\n\tat StepDefinition.Cart.click_Cart_link(Cart.java:16)\r\n\tat ✽.Then Click Cart link(Loginn.feature:15)\r\n",
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "Click Cart link",
+            "match": {
+              "location": "Cart.click_Cart_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Verify user in landed in the cart page",
+            "match": {
+              "location": "Cart.verify_user_in_landed_in_the_cart_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Verify user can click Laptop link",
+        "description": "",
+        "id": "login-feature;verify-user-can-click-laptop-link",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 111061200,
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d118.0.5993.88)\nBuild info: version: \u00274.11.0\u0027, revision: \u0027040bc5406b\u0027\nSystem info: os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.19\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [fbfd404a7a7885326bb9cc0f4cf2b088, get {url\u003dhttps://nexteticket.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\\Users\\SAKIF\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62243}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62243/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: fbfd404a7a7885326bb9cc0f4cf2b088\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)\r\n\tat Utility.BaseClass.LaunchURL(BaseClass.java:62)\r\n\tat StepDefinition.Login.launch(Login.java:18)\r\n\tat ✽.Given Launch \u003c\"URL\"\u003e(Loginn.feature:21)\r\n",
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "Launch \u003c\"URL\"\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": "URL",
+                  "offset": 9
+                }
+              ],
+              "location": "Login.launch(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Click Laptop link",
+            "match": {
+              "location": "HomePage.click_Laptop_link()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@tag3"
+          }
+        ]
+      }
+    ],
+    "name": "Login feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "Loginn.feature"
+  }
+]
